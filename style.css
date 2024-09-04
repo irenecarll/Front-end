@@ -73,20 +73,19 @@ ul {
 
 .box {
     width: 45%;
-    /* Mengatur lebar setiap box agar bisa sejajar dalam satu baris */
+    /* Mengatur lebar setiap box agar  sejajar */
     padding: 20px;
     border: 1px solid #ffffff;
     /* Menambahkan border pada setiap box */
     background-color: transparent;
-    /* Menambahkan warna latar belakang pada setiap box */
+    /* Menambahkan warna pada setiap box */
     text-align: left;
-    /* Mengatur teks agar berada di tengah secara horizontal */
+    /* Mengatur teks di tengah secara horizontal */
     outline: none;
 }
 
 .nobox {
     width: 45%;
-    /* mengatur supaya ukuran lebar semua box sama dalam 1 baris */
     padding: 20px;
     border: transparent;
     background-color: transparent;
@@ -115,4 +114,64 @@ ul {
     text-align: center;
 
 
+}
+
+/* Biar responsif */
+@media (max-width: 750px) {
+    .circleprofil {
+        width: 200px;
+        height: 200px;
+        padding: 20px;
+    }
+
+    .logo {
+        width: 20px;
+        height: 20px;
+        padding: 10px;
+    }
+
+    .flex {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    p {
+        font-size: small;
+    }
+
+    h1,
+    h2,
+    h3 {
+        font-size: large;
+
+    }
+
+    .nama {
+        font-size: small;
+
+    }
+
+    .container {
+        flex-direction: column;
+        align-items: center;
+        padding: 5px;
+    }
+
+    .box,
+    .nobox {
+        width: 100%;
+        padding: 10px;
+        text-align: center;
+    }
+
+    .edulogo {
+        width: 50px;
+        height: 50px;
+        padding: 10px;
+    }
+
+    .navigation a {
+        font-size: small;
+        margin: 8px;
+    }
 }
